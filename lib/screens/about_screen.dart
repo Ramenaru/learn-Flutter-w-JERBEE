@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class AboutScreen extends StatelessWidget {
+  const AboutScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Covid Apps",
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("About Our Organization"),
+          title: const Text("About Us"),
         ),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -16,14 +18,14 @@ class AboutScreen extends StatelessWidget {
               const SizedBox(height: 16),
               Image.asset("assets/icon.png", width: 250),
               const SizedBox(height: 8),
-              const Text("Covid Organization by WHO",
+              const Text("Covid-19 Organizations",
                   style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
                       color: Color(0xFF006EB2))),
               const SizedBox(height: 10),
               const Text(
-                "This Covid-19 organization is developed by WHO , this is the best organization. Ruled by Justice, Kindess, and Glory Magnifique LMAO, and blablaba if you want join this org you must sell your familly and you're must be an satanic cult members. thanks for reading this shit",
+                "Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention.",
               ),
               const SizedBox(height: 28),
               Row(
