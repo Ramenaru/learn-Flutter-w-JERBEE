@@ -24,21 +24,18 @@ class _CovidAppState extends State<CovidApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        cardTheme: const CardTheme(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(
-              Radius.circular(10),
-            )
-          )
-        )
-      ),
+          cardTheme: const CardTheme(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(
+        Radius.circular(10),
+      )))),
       home: Scaffold(
         body: PageView(
           controller: pageController,
           onPageChanged: (i) => onItemTapped(i),
-          children: const [
+          children: [
             HomeScreen(),
-            AboutScreen(),
+            const AboutScreen(),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
